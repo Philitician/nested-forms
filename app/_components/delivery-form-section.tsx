@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { useFormContext } from "react-hook-form";
-import { DeliveryForm } from "../types";
+import { OrderSummaryForm } from "../types";
 
 export function DeliveryFormSection() {
   return (
@@ -21,7 +21,7 @@ export function DeliveryFormSection() {
 }
 
 function OrderNrField() {
-  const { control } = useFormContext<DeliveryForm>();
+  const { control } = useFormContext<OrderSummaryForm>();
 
   return (
     <FormField
@@ -41,7 +41,7 @@ function OrderNrField() {
 }
 
 function DeliveryAddressField() {
-  const { control } = useFormContext<DeliveryForm>();
+  const { control } = useFormContext<OrderSummaryForm>();
   return (
     <FormField
       control={control}

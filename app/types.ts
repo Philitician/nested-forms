@@ -1,8 +1,8 @@
 import { z } from "zod";
 
-export const deliveryFormSchema = z.object({
+export const orderSummaryFormSchema = z.object({
   orderNr: z.string().min(5),
   deliveryAddress: z.string().min(5),
 });
 
-export type DeliveryForm = z.infer<typeof deliveryFormSchema>;
+export type OrderSummaryForm = z.infer<typeof orderSummaryFormSchema>;
