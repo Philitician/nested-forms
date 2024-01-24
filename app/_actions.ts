@@ -1,3 +1,4 @@
+"use server";
 import { OrderSummaryForm } from "./types";
 
 export const orderSummaryAction = async (data: OrderSummaryForm) => {
