@@ -1,4 +1,4 @@
-import { OrderSummaryFormProvider } from "./_components/form-wrapper";
+import { OrderSummaryFormProvider } from "./_components/order-summary-form-provider";
 import { DeliveryFormSection } from "./_components/delivery-form-section";
 import { Button } from "@/components/ui/button";
 
